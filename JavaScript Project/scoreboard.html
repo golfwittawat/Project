@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.80.0">
+    <title>JavaScript Project</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="canonical" href="navbars">
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="fonts/specimen_files/specimen_stylesheet.css" type="text/css" charset="utf-8" />
+    <link rel="stylesheet" href="fonts/stylesheet.css" type="text/css" charset="utf-8" />
+    <link href="css/scare.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="css/navbar.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark" aria-label="Ninth navbar example">
+        <div class="container-sm">
+            <a class="navbar-brand" href="index.html">Gcom</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample07XL"
+                aria-controls="navbarsExample07XL" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarsExample07XL">
+                <ul class="navbar-nav me-auto mb-2 mb--sm-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">หน้าแรก</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">ติดต่อเรา</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">โปรแกรม</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="scoreboard.html">ป้ายสกอร์บอร์ด</a></li>
+                            <li><a class="dropdown-item" href="#"></a></li>
+                            <li><a class="dropdown-item" href="#"></a></li>
+                        </ul>
+                    </li>
+
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+  
+        
+            <h2 class="container-sm mb-4" style="text-align: center;">
+                <span style="color: #000099;"><strong>โปรแกรมป้ายสกอร์บอร์ด</strong>
+                </span>
+            </h2>
+      
+   
+   
+        <div class="container">
+            <div class="card-deck text-white  ">
+                <div class=" text-center content-center">
+                    <button class="btn1 btn-primary btn-lg btn-block" id="btn1">กรอกชื่อทีมA</button>
+                    <div class="card-body text-center-sm">
+                        <p id="roundCorners">00</p>
+                        <button onclick="addone1()" type="button" class="btn btn-lg btn-info" >+</button>
+                        <button onclick="subone1()" type="button" class="btn btn-lg btn-info" >-</button>
+                    </div>
+                </div>
+                <div class="card-body text-center">
+                    <h2>Set</h2>
+                    <h1 id="set">00</h1>
+                    <button onclick="addone3()" type="button" class="btn btn-lg btn-info" >+</button>
+                    <button onclick="subone3()" type="button" class="btn btn-lg btn-info" >-</button>
+                </div>
+                <div class=" text-center content-center">
+                    <button class="btn2  btn-lg btn-block btn-danger" id="btn2">กรอกชื่อทีมB</button>
+                    <div class="card-body text-center">
+                        <p id="roundCorners2">00</p>
+                        <button onclick="addone2()" type="button" class="btn btn-lg btn-info" >+</button>
+                        <button onclick="subone2()" type="button" class="btn btn-lg btn-info" >-</button>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="col-sm-8 mx-auto text-center">
+                <h2><a class="btn btn-primary text-center" onClick="refreshPage()" role="button">Refresh </a></h2>
+            </div>
+
+    <script type="text/javascript" src="js/app.js"></script>
+
+</body>
+
+</html>
